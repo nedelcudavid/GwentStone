@@ -1,2 +1,23 @@
 Starting audit...
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\environment\HeartHound.java:20:55: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\functionalities\ChosenHeroes.java:51:43: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\functionalities\GameFlow.java:83:16: '10' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\functionalities\GameTable.java:63:16: '5' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\functionalities\GameTable.java:66:16: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\game\heroes\Hero.java:12:23: '30' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:84:5: Method length is 889 lines (max allowed is 150). [MethodLength]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:262:75: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:282:68: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:374:80: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:452:79: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:461:69: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:505:69: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:578:61: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:671:62: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:736:84: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:780:80: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:830:80: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:1061: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] C:\Users\andrei.nedelcu1503\Desktop\Facultate (Teme)\Anul 2\Teme\Teme Sem 1\POO\Tema1_POO_GwentStone\.\src\main\Main.java:1062: Line is longer than 100 characters (found 102). [LineLength]
 Audit done.
+Checkstyle ends with 20 errors.
