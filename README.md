@@ -66,7 +66,7 @@ implementate. Clasa BasicMinion este creata pentru a instantia un obiect de tip
 Minion (neputand sa fac asta din clasa Minion fiind abstracta), mai exact il 
 folosesc pentru a face deep copy unei carti pt comanda getCardAtPosition.
 ___________________________________________________________________________________________________
-	Clasa *Main*:
+	Clasa *Main* :
 
 	Am ales sa fac 2 for-uri, unul pentru a parsa jocurile si al doilea pentru a 
 parsa comenzile. Am setat la 0 counterele pentru scor si jocuri jucate inainte 
@@ -79,11 +79,13 @@ array-ul 'output'.
 
  	Avem 19 comenzi:
 ___________________________________________________________________________________________________
+```
 * getPlayerDeck 
 ```
 	Se face deep copy pentru deckul cerut si se adauga in nod alaturi de 'command'
 si 'playerIdx', la final se adauga nodul in output array.
 ___________________________________________________________________________________________________
+```
 * getPlayerHero
 ``` 
 	Se creaza un nod ce reprezinta un deep copy pentru eroul cerut in care se pune
@@ -91,11 +93,13 @@ fiecare caracteristica a acestuia prin metodele .put() si .putPOJO si se adauga
 in nodul action alaturi de 'command' si'playerIdx', la final se adauga nodul 
 in output array.
 ___________________________________________________________________________________________________
+```
 * getPlayerTurn
 ```  
 	Se adauga 'command' si 'output' cu playerTurn-ul actual si se adauga nodul in 
 output array.
 ___________________________________________________________________________________________________
+```
 * endPlayerTurn
 ```  
 	Se verifica turn-ul actual si se modifica, apoi se reseteaza minionii frozen 
@@ -106,6 +110,7 @@ pentru switch-round, se trage o carte din pachet si se sterge din deck, round
 se incrementeaza si se atribuie mana, in caz contrar switch-round-checker-ul 
 se incrementeaza.
 ___________________________________________________________________________________________________
+```
 * placeCard
 ```
 	In functie de turn se deduce jucatorul care plaseaza cartea, se verifica cazurile
@@ -114,21 +119,25 @@ specificandu-se tipul ei inaintesa fie musa jos (functia specifyingTypeOfMinion)
 se plaseaza pe masa si se scade mana aferenta, in caz contrar se specifica 
 eroarea si se adauga nodul in output array.
 ___________________________________________________________________________________________________
+```
 * getCardsInHand
 ```   
 	Se face un deep copy pentru mana jucatorului si se adauga in nod alaturi de 
 'comand' si 'playerIdx'.
 ___________________________________________________________________________________________________
+```
 * getCardsOnTable
 ```   
 	Se face un deep copy pentru masa si se adauga cu .putPOJO() in nodul action, 
 alaturi de 'command'.
 ___________________________________________________________________________________________________
+```
 * getPlayerMana
 ```
 	Se adauga in nod 'command', 'playerIdx', mana jucatorului si se adauga nodul 
 in array.
 ___________________________________________________________________________________________________
+```
 * getEnvironmentCardsInHand
 ```
 	Se creeaza un array de tip Card in care se adauga doar cartile Environment si 
@@ -142,6 +151,7 @@ intantiere se foloseste clasa BasicMinion, Minion fiind abstracta) si se
 adauga in nod, in caz ca nu exista se adauga eroarea"No card at that position"
  alaturi de 'command' si se adauga in output array.    
 ___________________________________________________________________________________________________
+```
 * useEnvironmentCard
 ```
 	Se verifica al cui e turn-ul, apoi cazurile invalide, iar daca niciunul nu este
@@ -149,12 +159,14 @@ intalnit se apeleaza metoda useAbility() implemntata fiecarei carti de tipul
 Environment si se verifica daca a murit vreun minion pentru a fi sters de pe 
 masa (functia removeMinionOnRowIfDied pentru a evita duplicate code).  
 ___________________________________________________________________________________________________
+```
 * getFrozenCardsOnTable
 ```
 	Se creeaza un array de tip Minion si se adauga in functie de coordonatele 
 stocate in .getFrozenCoords() cartile inghetate la momentul actual, apoi se
 adauga in nod array-ul si se pune in output array.    
 ___________________________________________________________________________________________________
+```
 * cardUsesAttack
 ```
 	Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
@@ -163,6 +175,7 @@ cartea ataca, se scade viata cartii atacate si se verifica daca a murit pentru a
 fi sters de pe masa (folosim functia checkForTanksAndUsesAttackpentru a evita 
 duplicate code).
 ___________________________________________________________________________________________________
+```
 * cardUsesAbility
 ```
 	Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
@@ -171,12 +184,14 @@ invalid cartea isi foloseste abilitatea apelata cu .use Ability(), se
 verifica daca a murit minionul atacat pentru a fi sters de pe masa (folosim 
 functia checkForTanksAndUsesAbility pentru a evita duplicate code).    
 ___________________________________________________________________________________________________
+```
 * useHeroAbility
 ```
 	Se verifica al cui turn este, apoi cazurile invalide, iar daca nu ne aflam 
 intr-un caz invalid eroul isi va folosi abilitatea apelata cu .useAbility()
  si se va scadea mana jucatorului in cauza. 
 ___________________________________________________________________________________________________
+```
 * useAttackHero
 ```
 	Se verifica al cui turn este, apoi daca exista carti tank pe randul adversarului,
@@ -185,16 +200,19 @@ eroul si i se va verifica viata, daca aceasta scade la zero sau mai putin se va
 afisa "Player one/two killed the enemy hero", caz in care se actualizeaza scorul
 (incrementam playerOneWins sau playerTwoWins).     
 ___________________________________________________________________________________________________
+```
 * getTotalGamesPlayed
 ```
 Se adauga in nod 'command' si 'output' cu totalGamesPlayed, iar apoi se adauga
 nodul in array    
 ___________________________________________________________________________________________________
+```
 * getPlayerOneWins
 ```
 Se adauga in nod 'command' si 'output' cu playerOneWins, iar apoi se adauga
 nodul in array    
 ___________________________________________________________________________________________________
+```
 * getPlayerTwoWins
 ```
 Se adauga in nod 'command' si 'output' cu playerTwoWins, iar apoi se adauga
