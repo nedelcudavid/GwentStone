@@ -82,13 +82,13 @@ ________________________________________________________________________________
 ```
 * getPlayerDeck 
 ```
-	Se face deep copy pentru deckul cerut si se adauga in nod alaturi de 'command'
+Se face deep copy pentru deckul cerut si se adauga in nod alaturi de 'command'
 si 'playerIdx', la final se adauga nodul in output array.
 ___________________________________________________________________________________________________
 ```
 * getPlayerHero
 ``` 
-	Se creaza un nod ce reprezinta un deep copy pentru eroul cerut in care se pune
+Se creaza un nod ce reprezinta un deep copy pentru eroul cerut in care se pune
 fiecare caracteristica a acestuia prin metodele .put() si .putPOJO si se adauga 
 in nodul action alaturi de 'command' si'playerIdx', la final se adauga nodul 
 in output array.
@@ -96,13 +96,13 @@ ________________________________________________________________________________
 ```
 * getPlayerTurn
 ```  
-	Se adauga 'command' si 'output' cu playerTurn-ul actual si se adauga nodul in 
+Se adauga 'command' si 'output' cu playerTurn-ul actual si se adauga nodul in 
 output array.
 ___________________________________________________________________________________________________
 ```
 * endPlayerTurn
 ```  
-	Se verifica turn-ul actual si se modifica, apoi se reseteaza minionii frozen 
+Se verifica turn-ul actual si se modifica, apoi se reseteaza minionii frozen 
 sau care au atacat deja din jumatatea de masa a jucatorului ce si-a terminat 
 turn-ul, la fel si checker-ul daca eroul acestuia a atacat, iar la final se 
 verifica daca se trece la runda urmatoare, in caz ca da se reseteaza checker-ul 
@@ -113,7 +113,7 @@ ________________________________________________________________________________
 ```
 * placeCard
 ```
-	In functie de turn se deduce jucatorul care plaseaza cartea, se verifica cazurile
+In functie de turn se deduce jucatorul care plaseaza cartea, se verifica cazurile
 invalide si daca niciunul nu este intalnit, se face un deep copy cartii din mana,
 specificandu-se tipul ei inaintesa fie musa jos (functia specifyingTypeOfMinion),
 se plaseaza pe masa si se scade mana aferenta, in caz contrar se specifica 
@@ -122,32 +122,32 @@ ________________________________________________________________________________
 ```
 * getCardsInHand
 ```   
-	Se face un deep copy pentru mana jucatorului si se adauga in nod alaturi de 
+Se face un deep copy pentru mana jucatorului si se adauga in nod alaturi de 
 'comand' si 'playerIdx'.
 ___________________________________________________________________________________________________
 ```
 * getCardsOnTable
 ```   
-	Se face un deep copy pentru masa si se adauga cu .putPOJO() in nodul action, 
+Se face un deep copy pentru masa si se adauga cu .putPOJO() in nodul action, 
 alaturi de 'command'.
 ___________________________________________________________________________________________________
 ```
 * getPlayerMana
 ```
-	Se adauga in nod 'command', 'playerIdx', mana jucatorului si se adauga nodul 
+Se adauga in nod 'command', 'playerIdx', mana jucatorului si se adauga nodul 
 in array.
 ___________________________________________________________________________________________________
 ```
 * getEnvironmentCardsInHand
 ```
-	Se creeaza un array de tip Card in care se adauga doar cartile Environment si 
+Se creeaza un array de tip Card in care se adauga doar cartile Environment si 
 acesta se adauga in nod cu .putPOJO() alaturi de 'playerIdx' si 'command' si 
 se adauga nodul in output array.
 ___________________________________________________________________________________________________
 ```
 * getCardAtPosition
 ```
-	Se face un deep copy al minionului de la coordonatele respective (pentru 
+Se face un deep copy al minionului de la coordonatele respective (pentru 
 intantiere se foloseste clasa BasicMinion, Minion fiind abstracta) si se 
 adauga in nod, in caz ca nu exista se adauga eroarea"No card at that position"
  alaturi de 'command' si se adauga in output array.    
@@ -155,7 +155,7 @@ ________________________________________________________________________________
 ```
 * useEnvironmentCard
 ```
-	Se verifica al cui e turn-ul, apoi cazurile invalide, iar daca niciunul nu este
+Se verifica al cui e turn-ul, apoi cazurile invalide, iar daca niciunul nu este
 intalnit se apeleaza metoda useAbility() implemntata fiecarei carti de tipul 
 Environment si se verifica daca a murit vreun minion pentru a fi sters de pe 
 masa (functia removeMinionOnRowIfDied pentru a evita duplicate code).  
@@ -163,14 +163,14 @@ ________________________________________________________________________________
 ```
 * getFrozenCardsOnTable
 ```
-	Se creeaza un array de tip Minion si se adauga in functie de coordonatele 
+Se creeaza un array de tip Minion si se adauga in functie de coordonatele 
 stocate in .getFrozenCoords() cartile inghetate la momentul actual, apoi se
 adauga in nod array-ul si se pune in output array.    
 ___________________________________________________________________________________________________
 ```
 * cardUsesAttack
 ```
-	Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
+Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
 adversarului, apoi cazurile invalide, iar daca nu ne aflam in niciun caz invalid 
 cartea ataca, se scade viata cartii atacate si se verifica daca a murit pentru a
 fi sters de pe masa (folosim functia checkForTanksAndUsesAttackpentru a evita 
@@ -179,7 +179,7 @@ ________________________________________________________________________________
 ```
 * cardUsesAbility
 ```
-	Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
+Se verifica al cui este turn-ul, apoi daca exista carti tank pe randul 
 adversarului, apoi cazurile invalide, iar daca nu ne aflam in niciun caz
 invalid cartea isi foloseste abilitatea apelata cu .use Ability(), se 
 verifica daca a murit minionul atacat pentru a fi sters de pe masa (folosim 
@@ -188,14 +188,14 @@ ________________________________________________________________________________
 ```
 * useHeroAbility
 ```
-	Se verifica al cui turn este, apoi cazurile invalide, iar daca nu ne aflam 
+Se verifica al cui turn este, apoi cazurile invalide, iar daca nu ne aflam 
 intr-un caz invalid eroul isi va folosi abilitatea apelata cu .useAbility()
  si se va scadea mana jucatorului in cauza. 
 ___________________________________________________________________________________________________
 ```
 * useAttackHero
 ```
-	Se verifica al cui turn este, apoi daca exista carti tank pe randul adversarului,
+Se verifica al cui turn este, apoi daca exista carti tank pe randul adversarului,
 apoi cazurile invalide, iar daca nu ne aflam intr-un caz invalid se va ataca 
 eroul si i se va verifica viata, daca aceasta scade la zero sau mai putin se va
 afisa "Player one/two killed the enemy hero", caz in care se actualizeaza scorul
