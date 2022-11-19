@@ -1,5 +1,5 @@
 # Tema 1 - GwentStone
-## Copyright 2022 David Nedelcu 324CA <nedelcudavid11@gmail.com>
+## Copyright 2022 David Nedelcu 324CA
 ___________________________________________________________________________________________________
 
 	Package game.functionalities contine clasele:
