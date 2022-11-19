@@ -66,9 +66,9 @@ implementate. Clasa BasicMinion este creata pentru a instantia un obiect de tip
 Minion (neputand sa fac asta din clasa Minion fiind abstracta), mai exact il 
 folosesc pentru a face deep copy unei carti pt comanda getCardAtPosition.
 ___________________________________________________________________________________________________
-	- Clasa *Main* :
+	 Clasa *Main* :
 
-	Am ales sa fac 2 for-uri, unul pentru a parsa jocurile si al doilea pentru a 
+Am ales sa fac 2 for-uri, unul pentru a parsa jocurile si al doilea pentru a 
 parsa comenzile. Am setat la 0 counterele pentru scor si jocuri jucate inainte 
 de primul for. Pentru fiecare joc se instantiaza clasa GameFlow cu obiectul game
 si se incrementeaza numarul de jocuri jucate, apoi intram in al 2-lea for, cel 
@@ -222,7 +222,7 @@ ________________________________________________________________________________
 
 ## Feedback :
 
-	Cea mai bine explicata tema de pana acum. Mi s-a parut greut sa respect limita
+Cea mai bine explicata tema de pana acum. Mi s-a parut greut sa respect limita
 de caractere pe rand din checkstyle (100), de aceea am si spart niste randuri 
 destul de ciudat, dar in mare mi-a placut maxim sa lucrez la ea, iar ideea cu
 jocul este foarte faina. Big up!
