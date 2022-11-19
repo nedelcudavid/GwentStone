@@ -42,9 +42,9 @@ necesare pentru inceputul de joc si pregateste jocul sa fie gata sa preia comenz
 minionilor legendari abilitatile lor specifice. 
 ___________________________________________________________________________________________________
 
-	Package-urile game.environment, game.heroes si game.minions reprezinta
-fiecare categorie de entitati sin joc, avand fiecare tipurile specifice si o
-clasa abstracta cu numele categoriei care tine modelele clasice de obiecte 
+	Package-urile game.environment, game.heroes si game.minions 
+reprezinta fiecare categorie de entitati sin joc, avand fiecare tipurile specifice 
+si o clasa abstracta cu numele categoriei care tine modelele clasice de obiecte 
 Environment, Hero respectiv Minion. Sa le luam pe rand:
 
 - *Environment* clasa abstracta ce extinde Card si implementeaza HasAbility este 
@@ -66,7 +66,7 @@ implementate. Clasa BasicMinion este creata pentru a instantia un obiect de tip
 Minion (neputand sa fac asta din clasa Minion fiind abstracta), mai exact il 
 folosesc pentru a face deep copy unei carti pt comanda getCardAtPosition.
 ___________________________________________________________________________________________________
-	Clasa *Main* :
+	- Clasa *Main* :
 
 	Am ales sa fac 2 for-uri, unul pentru a parsa jocurile si al doilea pentru a 
 parsa comenzile. Am setat la 0 counterele pentru scor si jocuri jucate inainte 
@@ -77,7 +77,7 @@ din input pentru a le putea folosi mai usor pe parcurs. Creez un nod 'action' in
 care uremaza sa adaug key-val in functie de comanda specifica si sa il adaug in 
 array-ul 'output'.
 
- 	Avem 19 comenzi:
+ 	- Avem 19 comenzi:
 ___________________________________________________________________________________________________
 ```
 * getPlayerDeck 
