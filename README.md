@@ -144,6 +144,7 @@ ________________________________________________________________________________
 acesta se adauga in nod cu .putPOJO() alaturi de 'playerIdx' si 'command' si 
 se adauga nodul in output array.
 ___________________________________________________________________________________________________
+```
 * getCardAtPosition
 ```
 	Se face un deep copy al minionului de la coordonatele respective (pentru 
