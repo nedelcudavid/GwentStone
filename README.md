@@ -42,7 +42,3 @@ GwentStone offers a dynamic two-player turn-based card game experience. Players 
 - Comprehensive command handling via JSON files for game control and debugging
 
 GwentStone aims to provide an immersive and strategic card gaming experience while offering robust debugging capabilities and statistical insights for both players and administrators.
-
----
-
-This description emphasizes the integration of JSON files for input data, ensuring a seamless experience for players and administrators alike.
