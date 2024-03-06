@@ -1,4 +1,4 @@
-## GwentStone
+# GwentStone
 ## Copyright 2022 Nedelcu Andrei-David
 
 GwentStone is a Java-based project designed to facilitate a turn-based card game experience inspired by popular card games Gwent and HearthStone. The project is structured around key functionalities encapsulated within various packages.
