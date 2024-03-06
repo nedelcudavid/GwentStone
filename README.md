@@ -1,7 +1,3 @@
-Certainly, here's the revised description emphasizing that all input is provided through JSON files:
-
----
-
 ## GwentStone
 
 GwentStone is a Java-based project designed to facilitate a turn-based card game experience inspired by popular card games like Gwent. The project is structured around key functionalities encapsulated within various packages.
