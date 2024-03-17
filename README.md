@@ -36,7 +36,7 @@ GwentStone offers a dynamic two-player turn-based card game experience. Players 
 ### Features:
 
 - Turn-based gameplay mechanics
-- Deck and hero selection
+- Deck and hero selection 
 - Card deployment and interaction on the game board
 - Hero abilities and environmental effects
 - Player statistics tracking for wins and total games played
